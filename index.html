@@ -1,283 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <meta name="author" content="Petrashkevich Roman" />
-    <meta
-      name="description"
-      content="Portfolio are a website containing my resume and information about me"
-    />
-    <meta
-      name="keywords"
-      content="Portfolio, resume, contacts, Web developer, React, Redux, JS, JavaScript, html, css, sass, scss, gulp, webpack, node.js, mongoDB"
-    />
 
-    <!-- предзагрузка шрифтов -->
-    <!-- fontello -->
-    <link
-      rel="preload"
-      href="fonts/fontello/fontello.woff2?23826446"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <!-- Montserrat -->
-    <link
-      rel="preload"
-      href="fonts/Montserrat/MontserratLightItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat/MontserratLight.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat/MontserratBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <!-- ProximaNova -->
-    <link
-      rel="preload"
-      href="fonts/ProximaNova/ProximaNovaRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/ProximaNova/ProximaNovaLight.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/ProximaNova/ProximaNovaBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <!-- Raleway -->
-    <link
-      rel="preload"
-      href="fonts/Raleway/RalewayRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Raleway/RalewayLightItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Raleway/RalewayLight.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <meta name="author" content="Petrashkevich Roman" />
+  <meta name="description" content="Portfolio are a website containing my resume and information about me" />
+  <meta name="keywords"
+    content="Portfolio, resume, contacts, Web developer, React, Redux, JS, JavaScript, html, css, sass, scss, gulp, webpack, node.js, mongoDB" />
 
-    <!-- favicon https://realfavicongenerator.net/ -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/img/faviconfavicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="Portfolio" />
-    <meta name="application-name" content="Portfolio" />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="img/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
+  <!-- предзагрузка шрифтов -->
+  <!-- fontello -->
+  <link rel="preload" href="fonts/fontello/fontello.woff2?23826446" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <!-- Montserrat -->
+  <link rel="preload" href="fonts/Montserrat/MontserratLightItalic.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Montserrat/MontserratLight.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Montserrat/MontserratBold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <!-- ProximaNova -->
+  <link rel="preload" href="fonts/ProximaNova/ProximaNovaRegular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ProximaNova/ProximaNovaLight.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ProximaNova/ProximaNovaBold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <!-- Raleway -->
+  <link rel="preload" href="fonts/Raleway/RalewayRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Raleway/RalewayLightItalic.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Raleway/RalewayLight.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
-    <!-- IE color -->
-    <meta name="msapplication-navbutton-color" content="#FF3300" />
-    <meta name="msapplication-TileColor" content="#00aba9" />
-    <!-- Chrome, Firefox OS and Opera color -->
-    <meta name="theme-color" content="#ffffff" />
-    <!-- Sofari color -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-    <!-- yandex color -->
-    <meta name="viewport" content="ya-title=fade,ya-dock=fade" />
-    <!-- / favicon -->
+  <!-- favicon https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/faviconfavicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <meta name="apple-mobile-web-app-title" content="Portfolio" />
+  <meta name="application-name" content="Portfolio" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Portfolio are a website" />
-    <meta property="og:site_name" content="Portfolio" />
-    <meta property="og:url" content="https://Portfolio.com/" />
-    <meta
-      property="og:description"
-      content="Portfolio are a website containing my resume and information about me."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="img/favicon/open-graph.jpg" />
-    <!-- / Open Graph -->
+  <!-- IE color -->
+  <meta name="msapplication-navbutton-color" content="#FF3300" />
+  <meta name="msapplication-TileColor" content="#00aba9" />
+  <!-- Chrome, Firefox OS and Opera color -->
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Sofari color -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <!-- yandex color -->
+  <meta name="viewport" content="ya-title=fade,ya-dock=fade" />
+  <!-- / favicon -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio are a website" />
+  <meta property="og:site_name" content="Portfolio" />
+  <meta property="og:url" content="https://Portfolio.com/" />
+  <meta property="og:description" content="Portfolio are a website containing my resume and information about me." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/favicon/open-graph.jpg" />
+  <!-- / Open Graph -->
 
-  <body>
-    <div class="container">
-      <div class="s-main-mnu">
-        <nav>
-          <ul class="menu-list">
-            <li class="menu-list__item menu-list__item_active">
-              <a class="menu-list__link btn link" href="#home">обо мне</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link btn link" href="#resume">резюме</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link btn link" href="#skills">навыки</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link btn link" href="#portfolio"
-                >портфолио</a
-              >
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link btn link" href="#contact">контакты</a>
-            </li>
-          </ul>
-          <a class="toggle-menu link" href="#"></a>
-        </nav>
-      </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
 
-      <main>
-        <section class="s-home section" id="home">
-          <div class="s-home__photo">
-            <picture>
-              <source srcset="img/photo.webp 1x" type="image/webp" />
-              <img class="s-home__img" src="img/photo.jpg" alt="Roman photo" />
-            </picture>
-          </div>
-          <div class="s-home__descr">
-            <h1 class="s-home__title">
-              Петрашкевич <span class="s-home__title_accent">Роман</span>
-            </h1>
-            <h2 class="s-home__subtitle">FRONT-END разработчик</h2>
-            <hr class="s-home__hr" />
-            <p class="s-home__text">
-              Начинающий Web-разработчик. Очень старательный. Посмотрите мое
-              портфолио и возможно, вы захотите взять меня на работу :)
+<body>
+  <div class="container">
+    <div class="s-main-mnu">
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-list__item menu-list__item_active">
+            <a class="menu-list__link btn link" href="#home">обо мне</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link btn link" href="#resume">резюме</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link btn link" href="#skills">навыки</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link btn link" href="#portfolio">портфолио</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link btn link" href="#contact">контакты</a>
+          </li>
+        </ul>
+        <a class="toggle-menu link" href="#"></a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="s-home section" id="home">
+        <div class="s-home__photo">
+          <picture>
+            <source srcset="img/photo.webp 1x" type="image/webp" />
+            <img class="s-home__img" src="img/photo.jpg" alt="Roman photo" />
+          </picture>
+        </div>
+        <div class="s-home__descr">
+          <h1 class="s-home__title">
+            Петрашкевич <span class="s-home__title_accent">Роман</span>
+          </h1>
+          <h2 class="s-home__subtitle">FRONT-END разработчик</h2>
+          <hr class="s-home__hr" />
+          <p class="s-home__text">
+            Очень старательный Front-End разработчик ищет интересную работу. Посмотрите мое портфолио и возможно, вы
+            захотите взять меня на работу :)
+          </p>
+          <div class="contacts s-home__contacts">
+            <p class="contacts__email">
+              <a href="mailto:timmtha7er@gmail.com">email: timmtha7er@gmail.com</a>
+              <span> / </span>
+              <span class="contacts__phone">
+                <a href="tel:+375298626610">телефон +375 29 8626610</a>
+              </span>
             </p>
-            <div class="contacts s-home__contacts">
-              <p class="contacts__email">
-                email: timmtha7er@gmail.com<span> / </span
-                ><span class="contacts__phone">телефон +375 29 8626610</span>
-              </p>
-            </div>
-            <div class="social-icons">
-              <a
-                class="social-icons__link"
-                href="https://vk.com/id218575231"
-                target="_blank"
-                ><i class="icon-vkontakte"></i
-              ></a>
-              <a
-                class="social-icons__link"
-                href="https://github.com/TimmTha7er"
-                target="_blank"
-                ><i class="icon-github"></i
-              ></a>
-              <a
-                class="social-icons__link"
-                href="https://www.instagram.com/timmtha7er/"
-                target="_blank"
-                ><i class="icon-instagram"></i
-              ></a>
-              <a
-                class="social-icons__link"
-                href="https://www.facebook.com/profile.php?id=100056025472614"
-                target="_blank"
-                ><i class="icon-facebook"></i></a
-              ><a
-                class="social-icons__link"
-                href="https://linkedin.com/in/роман-петрашкевич-9196b61b9"
-                target="_blank"
-                ><i class="icon-linkedin"></i
-              ></a>
-            </div>
           </div>
-        </section>
+          <div class="social-icons">
+            <a class="social-icons__link" href="https://vk.com/id218575231" target="_blank"><i
+                class="icon-vkontakte"></i></a>
+            <a class="social-icons__link" href="https://github.com/TimmTha7er" target="_blank"><i
+                class="icon-github"></i></a>
+            <a class="social-icons__link" href="https://www.instagram.com/timmtha7er/" target="_blank"><i
+                class="icon-instagram"></i></a>
+            <a class="social-icons__link" href="https://www.facebook.com/profile.php?id=100056025472614"
+              target="_blank"><i class="icon-facebook"></i></a><a class="social-icons__link"
+              href="https://linkedin.com/in/роман-петрашкевич-9196b61b9" target="_blank"><i
+                class="icon-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
 
-        <section class="s-resume section" id="resume">
-          <div class="section-inner">
-            <div class="s-resume__head">
-              <div class="section-title">
-                <h2 class="title section__title">резюме</h2>
-              </div>
-              <a
-                class="btn link s-resume__link"
-                href="https://drive.google.com/file/d/1g4beDFDzjiuuxZ_fawueBcJgr-tm0L0f/view?usp=sharing"
-                target="_blank"
-              >
-                <i class="icon-download"> </i>&nbsp; скачать резюме</a
-              ><a class="btn get-in-touch link s-resume__link" href="#contact">
-                <i class="icon-volume-control-phone"> </i>&nbsp; связаться</a
-              >
+      <section class="s-resume section" id="resume">
+        <div class="section-inner">
+          <div class="s-resume__head">
+            <div class="section-title">
+              <h2 class="title section__title">резюме</h2>
             </div>
-            <div class="education-list s-resume__education-list">
-              <h2 class="education-list__title">
-                <i class="icon-bank"></i>&nbsp;Образование
-              </h2>
-              <div class="education-list__item">
+            <a class="btn link s-resume__link"
+              href="https://docs.google.com/document/d/1FTzZZ-5nqNBwbxyWWXAXw9Cb9EVHc4IcKABe0XGukq8/edit?usp=sharing" target="_blank">
+              <i class="icon-download"> </i>&nbsp; скачать резюме</a><a class="btn get-in-touch link s-resume__link"
+              href="#contact">
+              <i class="icon-volume-control-phone"> </i>&nbsp; связаться</a>
+          </div>
+          <div class="education-list s-resume__education-list">
+            <h2 class="education-list__title">
+              <i class="icon-bank"></i>&nbsp;Образование
+            </h2>
+            <!-- <div class="education-list__item">
                 <h3 class="education-list__item-title">
                   Монтаж и эксплуатация электрооборудования
                 </h3>
                 <h4 class="education-list__item-subtitle">МГПК 2004-2008гг</h4>
                 <p class="education-list__item-text">Техник-электрик</p>
-              </div>
-              <div class="education-list__item">
-                <h3 class="education-list__item-title">
-                  Энергетическое обеспечение предприятий и гражданских зданий
-                </h3>
-                <h4 class="education-list__item-subtitle">БГАТУ 2009-2014гг</h4>
-                <p class="education-list__item-text">Инженер</p>
-              </div>
-              <div class="education-list__item">
-                <h3 class="education-list__item-title">
-                  Программное обеспечение информационных систем
-                </h3>
-                <h4 class="education-list__item-subtitle">
-                  БГУИР (переподготовка, вечернее обучение) - 2014-2016гг.
-                </h4>
-                <p class="education-list__item-text">Инженер программист</p>
-              </div>
+              </div> -->
+            <div class="education-list__item">
+              <h3 class="education-list__item-title">
+                Программное обеспечение информационных систем
+              </h3>
+              <h4 class="education-list__item-subtitle">
+                БГУИР (переподготовка, вечернее обучение) - 2014-2016гг.
+              </h4>
+              <p class="education-list__item-text">Инженер программист</p>
             </div>
-            <div class="experience-list s-resume__experience-list">
-              <h2 class="experience-list__title">
-                <i class="icon-flag"></i>&nbsp;Опыт работы
-              </h2>
-              <div class="experience-list__item">
+            <div class="education-list__item">
+              <h3 class="education-list__item-title">
+                Энергетическое обеспечение предприятий и гражданских зданий
+              </h3>
+              <h4 class="education-list__item-subtitle">БГАТУ 2009-2014гг</h4>
+              <p class="education-list__item-text">Инженер-энергетик</p>
+            </div>
+          </div>
+          <div class="experience-list s-resume__experience-list">
+            <h2 class="experience-list__title">
+              <i class="icon-flag"></i>&nbsp;Опыт работы
+            </h2>
+            <!-- <div class="experience-list__item">
                 <h3 class="experience-list__item-title">Электромонтажник</h3>
                 <h4 class="experience-list__item-subtitle">
                   УП «СПМК-104» ООО «Электрикстрой» 2008-2009гг
@@ -286,8 +187,8 @@
                   Бригада по установке электрооборудования, силовых установок и
                   осветительных сетей.
                 </p>
-              </div>
-              <div class="experience-list__item">
+              </div> -->
+            <!-- <div class="experience-list__item">
                 <h3 class="experience-list__item-title">Техник</h3>
                 <h4 class="experience-list__item-subtitle">
                   ЗАО "Стройпроект" 2009-2012гг
@@ -295,8 +196,8 @@
                 <p class="experience-list__item-text">
                   Отдел "Пожарная автомитика и слаботочные сети"
                 </p>
-              </div>
-              <div class="experience-list__item">
+              </div> -->
+            <!-- <div class="experience-list__item">
                 <h3 class="experience-list__item-title">Инженер</h3>
                 <h4 class="experience-list__item-subtitle">
                   ООО "Энергетическое проектирование" 2012-2015гг
@@ -304,625 +205,420 @@
                 <p class="experience-list__item-text">
                   Электротехнический отдел
                 </p>
-              </div>
-              <div class="experience-list__item">
-                <h3 class="experience-list__item-title">Junior Front-End Developer</h3>
-                <h4 class="experience-list__item-subtitle">GP Solutions 2021 - настоящее время</h4>
-                <p class="experience-list__item-text">Custom Development Department</p>
-              </div>
+              </div> -->
+            <div class="experience-list__item">
+              <h3 class="experience-list__item-title">Front-End Developer</h3>
+              <h4 class="experience-list__item-subtitle">SKDO Systems, Июнь 2021 - настоящее время</h4>
+              <p class="experience-list__item-text">React, Redux, Vanilla JS, Stimulus, Tinymce WYSIWYG, Tiptap WYSIWYG, Bootstrap, SCSS, БЭМ, Perfect Pixel</p>
             </div>
-            <div class="testimonials-list">
-              <h2 class="testimonials-list__title">
-                <i class="icon-commenting"></i>&nbsp; Отзывы
-              </h2>
-
-              <div class="testimonials-slider">
-                <div class="testimonials-list__item">
-                  <div class="testimonials-list__item-content">
-                    <p class="testimonials-list__item-text">
-                      Работал с Романом Игнатьевичем. За 2.5 года работы никаких
-                      проблем.
-                    </p>
-                    <p class="testimonials-list__item-text">
-                      тел. +375 (29) 755 94 22
-                    </p>
-                  </div>
-                  <div class="testimonials-list__item-img-wrap">
-                    <picture>
-                      <source
-                        srcset="img/team/Mirik.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="testimonials-list__item-img"
-                        src="img/team/Mirik.jpg"
-                        alt="team"
-                      />
-                    </picture>
-                  </div>
-                  <p class="testimonials-list__item-author">
-                    Таргович Мирослав
-                  </p>
-                  <!-- <p class="testimonials-list__item-firm">Начальник отдела</p> -->
-                  <p class="testimonials-list__item-firm">ЗАО "Стройпроект"</p>
-                </div>
-                <div class="testimonials-list__item">
-                  <div class="testimonials-list__item-content">
-                    <p class="testimonials-list__item-text">
-                      Хороший инженер, способный. Очень усидчивый и
-                      старательный. Прекрасно работает в комманде.
-                    </p>
-                    <p class="testimonials-list__item-text">
-                      тел. +375 (29) 550 52 52
-                    </p>
-                  </div>
-                  <div class="testimonials-list__item-img-wrap">
-                    <picture>
-                      <source
-                        srcset="img/team/Serg.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="testimonials-list__item-img"
-                        src="img/team/Serg.jpg"
-                        alt="team"
-                      />
-                    </picture>
-                  </div>
-                  <p class="testimonials-list__item-author">Гуцев Сергей</p>
-                  <!-- <p class="testimonials-list__item-firm">
-            Главный специалист
-          </p> -->
-                  <p class="testimonials-list__item-firm">
-                    "Энергетическое проектирование"
-                  </p>
-                </div>
-                <div class="testimonials-list__item">
-                  <div class="testimonials-list__item-content">
-                    <p class="testimonials-list__item-text">
-                      "Ты не прирожденный монтажник. Думаю, в проектировании или
-                      другом умственном труде ты преуспеешь."
-                    </p>
-                    <p class="testimonials-list__item-text">
-                      тел. +375 (176) 73 34 65
-                    </p>
-                  </div>
-                  <div class="testimonials-list__item-img-wrap">
-                    <picture>
-                      <source
-                        srcset="img/team/Mironchick.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="testimonials-list__item-img"
-                        src="img/team/Mironchick.jpg"
-                        alt="team"
-                      />
-                    </picture>
-                  </div>
-                  <p class="testimonials-list__item-author">
-                    Валентин Иванович Мирончик
-                  </p>
-                  <!-- <p class="testimonials-list__item-firm">Директор</p> -->
-                  <p class="testimonials-list__item-firm">УП «СПМК-104»</p>
-                </div>
-              </div>
-
-              <div class="testimonials-nav-container"></div>
-            </div>
-
-            <div class="s-resume__footer">
-              <a
-                class="btn link s-resume__link"
-                href="https://drive.google.com/file/d/1g4beDFDzjiuuxZ_fawueBcJgr-tm0L0f/view?usp=sharing"
-                target="_blank"
-              >
-                <i class="icon-download"> </i>&nbsp;скачать мое резюме</a
-              ><a class="btn get-in-touch link s-resume__link" href="#contact">
-                <i class="icon-volume-control-phone"> </i>&nbsp; связаться</a
-              >
-              <blockquote class="s-resume__blockquote">
-                "The best way to predict the future is to create it"<br /><span
-                  class="s-resume__blockquote_italic"
-                  >Peter Drucker</span
-                >
-              </blockquote>
+            <div class="experience-list__item">
+              <h3 class="experience-list__item-title">Front-End Developer</h3>
+              <h4 class="experience-list__item-subtitle">GP Solutions, Январь 2021 - Июнь 2021</h4>
+              <p class="experience-list__item-text">TS, React, Redux, Jest, Enzyme, WebPack, RsJS, Material UI, Styled Components</p>
             </div>
           </div>
-        </section>
+          <div class="testimonials-list">
+            <h2 class="testimonials-list__title">
+              <i class="icon-commenting"></i>&nbsp; Отзывы
+            </h2>
 
-        <section class="s-skills section" id="skills">
-          <div class="section-inner">
-            <div class="section-title">
-              <h2 class="title section__title">навыки</h2>
+            <div class="testimonials-slider">
+              <div class="testimonials-list__item">
+                <div class="testimonials-list__item-content">
+                  <p class="testimonials-list__item-text">
+                    Работала с Ромой. За год работы никаких
+                    проблем.
+                  </p>
+                  <!-- <p class="testimonials-list__item-text">
+                    тел. +375 (29) 755 94 22
+                  </p> -->
+                </div>
+                <div class="testimonials-list__item-img-wrap">
+                  <picture>
+                    <source srcset="img/team/Kseniya.webp 1x" type="image/webp" />
+                    <img class="testimonials-list__item-img" src="img/team/Kseniya.webp" alt="team" />
+                  </picture>
+                </div>
+                <p class="testimonials-list__item-author">
+                  Ксения
+                </p>
+                <!-- <p class="testimonials-list__item-firm">Начальник отдела</p> -->
+                <p class="testimonials-list__item-firm">SKDO Systems</p>
+              </div>
+              <div class="testimonials-list__item">
+                <div class="testimonials-list__item-content">
+                  <p class="testimonials-list__item-text">
+                    Хочется отметить трудоспособность Романа, так как в заданные сроки ему удавалось выполнять большой объем работы.
+                  </p>
+                  <!-- <p class="testimonials-list__item-text">
+                    тел. +375 (29) 550 52 52
+                  </p> -->
+                </div>
+                <div class="testimonials-list__item-img-wrap">
+                  <picture>
+                    <source srcset="img/team/Alesha.webp 1x" type="image/webp" />
+                    <img class="testimonials-list__item-img" src="img/team/Alesha.jpg" alt="team" />
+                  </picture>
+                </div>
+                <p class="testimonials-list__item-author">Леша</p>
+                <!-- <p class="testimonials-list__item-firm">
+            Главный специалист
+          </p> -->
+                <p class="testimonials-list__item-firm">
+                  SKDO Systems
+                </p>
+              </div>
+              <div class="testimonials-list__item">
+                <div class="testimonials-list__item-content">
+                  <p class="testimonials-list__item-text">
+                    Выполнял свою работу качественно, проявил себя с хорошей стороны.
+                  </p>
+                  <!-- <p class="testimonials-list__item-text">
+                    тел. +375 (176) 73 34 65
+                  </p> -->
+                </div>
+                <div class="testimonials-list__item-img-wrap">
+                  <picture>
+                    <source srcset="img/team/Valera.webp 1x" type="image/webp" />
+                    <img class="testimonials-list__item-img" src="img/team/Valera.jpg" alt="team" />
+                  </picture>
+                </div>
+                <p class="testimonials-list__item-author">
+                  Валера
+                </p>
+                <!-- <p class="testimonials-list__item-firm">Директор</p> -->
+                <p class="testimonials-list__item-firm">SKDO Systems</p>
+              </div>
             </div>
-            <div class="slills-items">
-              <div class="slills-items__item">
-                <!-- <div class="s-skills-item-title"> -->
-                <h3 class="slills-items__item-title">
-                  <i class="icon-heart slill slills-items__item-icon"></i
-                  >&nbsp;Социальные навыки
-                </h3>
-                <!-- </div> -->
-                                <ul class="skills-list">
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar"
-                        role="progressbar"
-                        data-percent="90%"
-                        style="width: 90%"
-                      >
-                        <span class="sr-only">90% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type"
-                        >Коммуникабельность</span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >90%</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar progress__progress-bar_black"
-                        role="progressbar"
-                        data-percent="77%"
-                        style="width: 77%"
-                      >
-                        <span class="sr-only">77% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type"
-                        >Лидерство</span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >77%</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar progress__progress-bar_red"
-                        role="progressbar"
-                        data-percent="55%"
-                        style="width: 55%"
-                      >
-                        <span class="sr-only">55% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type"
-                        >Уверенность</span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >55%</span
-                      >
-                    </div>
-                  </li>
-                </ul>
-                 
-              </div>
-              <div class="slills-items__item">
-                <h3 class="slills-items__item-title">
-                  <i class="icon-hand-grab-o slills-items__item-icon"></i
-                  >&nbsp;Верстка
-                </h3>
 
-                <ul class="skills-list">
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar"
-                        role="progressbar"
-                        data-percent="73.7%"
-                        style="width: 73.7%"
-                      >
-                        <span class="sr-only">73.7% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type"
-                        >HTML5 / CSS3</span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >73.7%</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar"
-                        role="progressbar"
-                        data-percent="70.7%"
-                        style="width: 70.7%"
-                      >
-                        <span class="sr-only">70.7% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type">
-                        flexbox, grid </span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >70.7%</span
-                      >
-                    </div>
-                  </li>
+            <div class="testimonials-nav-container"></div>
+          </div>
 
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar progress__progress-bar_red"
-                        role="progressbar"
-                        data-percent="60.7%"
-                        style="width: 60.7%"
-                      >
-                        <span class="sr-only">81.7% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type"
-                        >Gulp SASS, SCSS..</span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >60.7%</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="progress skills-list__progress">
-                      <div
-                        class="progress-bar progress__progress-bar progress__progress-bar_black"
-                        role="progressbar"
-                        data-percent="50%"
-                        style="width: 50%"
-                      >
-                        <span class="sr-only">50% Complete</span>
-                      </div>
-                      <span class="progress-type progress__progress-type"
-                        >bootstrap 3, susy</span
-                      ><span
-                        class="progress-completed progress__progress-completed"
-                        >50%</span
-                      >
-                    </div>
-                  </li>
-                </ul>
-              </div>
+          <div class="s-resume__footer">
+            <a class="btn link s-resume__link"
+              href="https://docs.google.com/document/d/1FTzZZ-5nqNBwbxyWWXAXw9Cb9EVHc4IcKABe0XGukq8/edit?usp=sharing" target="_blank">
+              <i class="icon-download"> </i>&nbsp;скачать мое резюме</a><a class="btn get-in-touch link s-resume__link"
+              href="#contact">
+              <i class="icon-volume-control-phone"> </i>&nbsp; связаться</a>
+            <blockquote class="s-resume__blockquote">
+              "The best way to predict the future is to create it"<br /><span class="s-resume__blockquote_italic">Peter
+                Drucker</span>
+            </blockquote>
+          </div>
+        </div>
+      </section>
 
-              <div class="slills-items__item">
-                <h3 class="slills-items__item-title">
-                  <i class="icon-hand-peace-o slills-items__item-icon"></i
-                  >&nbsp;Программирование
-                </h3>
+      <section class="s-skills section" id="skills">
+        <div class="section-inner">
+          <div class="section-title">
+            <h2 class="title section__title">навыки</h2>
+          </div>
+          <div class="slills-items">
+            <div class="slills-items__item">
+              <!-- <div class="s-skills-item-title"> -->
+              <h3 class="slills-items__item-title">
+                <i class="icon-heart slill slills-items__item-icon"></i>&nbsp;Социальные навыки
+              </h3>
+              <!-- </div> -->
+              <ul class="skills-list">
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar" role="progressbar" data-percent="90%"
+                      style="width: 90%">
+                      <span class="sr-only">90% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">Коммуникабельность</span><span
+                      class="progress-completed progress__progress-completed">90%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar progress__progress-bar_black" role="progressbar"
+                      data-percent="77%" style="width: 77%">
+                      <span class="sr-only">77% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">Лидерство</span><span
+                      class="progress-completed progress__progress-completed">77%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar progress__progress-bar_red" role="progressbar"
+                      data-percent="65%" style="width: 65%">
+                      <span class="sr-only">65% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">Уверенность</span><span
+                      class="progress-completed progress__progress-completed">65%</span>
+                  </div>
+                </li>
+              </ul>
 
-                <ul class="skills-list">
-                      <li>
-                        <div class="progress skills-list__progress">
-                          <div
-                            class="progress-bar progress__progress-bar"
-                            role="progressbar"
-                            data-percent="65.7%"
-                            style="width: 65.7%"
-                          >
-                            <span class="sr-only">65.7% Complete</span>
-                          </div>
-                          <span class="progress-type progress__progress-type"
-                            >JS ES6, ES7, ES8... </span
-                          ><span class="progress-completed progress__progress-completed"
-                            >65.7%</span
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="progress skills-list__progress">
-                          <div
-                            class="
+            </div>
+
+            <div class="slills-items__item">
+              <h3 class="slills-items__item-title">
+                <i class="icon-hand-peace-o slills-items__item-icon"></i>&nbsp;Программирование
+              </h3>
+
+              <ul class="skills-list">
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar" role="progressbar" data-percent="72.7%"
+                      style="width: 72.7%">
+                      <span class="sr-only">72.7% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">JS ES6, ES7, ES8... </span><span
+                      class="progress-completed progress__progress-completed">72.7%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="
                               progress-bar
                               progress__progress-bar
                               progress__progress-bar_black
-                            "
-                            role="progressbar"
-                            data-percent="50.7%"
-                            style="width: 50.7%"
-                          >
-                            <span class="sr-only">50% Complete</span>
-                          </div>
-                          <span class="progress-type progress__progress-type">TS </span
-                          ><span class="progress-completed progress__progress-completed"
-                            >50%</span
-                          >
-                        </div>
-                      </li>
+                            " role="progressbar" data-percent="50.7%" style="width: 50.7%">
+                      <span class="sr-only">50% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">TS </span><span
+                      class="progress-completed progress__progress-completed">50%</span>
+                  </div>
+                </li>
 
-                      <li>
-                        <div class="progress skills-list__progress">
-                          <div
-                            class="
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="
                               progress-bar progress__progress-bar progress__progress-bar_red
-                            "
-                            role="progressbar"
-                            data-percent="61.7%"
-                            style="width: 61.7%"
-                          >
-                            <span class="sr-only">61% Complete</span>
-                          </div>
-                          <span class="progress-type progress__progress-type"
-                            >React, Redux</span
-                          ><span class="progress-completed progress__progress-completed"
-                            >61.7%</span
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="progress skills-list__progress">
-                          <div
-                            class="progress-bar progress__progress-bar"
-                            role="progressbar"
-                            data-percent="45%"
-                            style="width: 45%"
-                          >
-                            <span class="sr-only">45% Complete</span>
-                          </div>
-                          <span class="progress-type progress__progress-type"
-                            >jest, enzyme </span
-                          ><span class="progress-completed progress__progress-completed"
-                            >45%</span
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="progress skills-list__progress">
-                          <div
-                            class="
+                            " role="progressbar" data-percent="65.7%" style="width: 65.7%">
+                      <span class="sr-only">65% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">React, Redux</span><span
+                      class="progress-completed progress__progress-completed">65.7%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar" role="progressbar" data-percent="45%"
+                      style="width: 45%">
+                      <span class="sr-only">45% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">jest, enzyme </span><span
+                      class="progress-completed progress__progress-completed">45%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="
                               progress-bar progress__progress-bar progress__progress-black
-                            "
-                            role="progressbar"
-                            data-percent="50%"
-                            style="width: 50%"
-                          >
-                            <span class="sr-only">50% Complete</span>
-                          </div>
-                          <span class="progress-type progress__progress-type"
-                            >webpack, npm, yarn</span
-                          ><span class="progress-completed progress__progress-completed"
-                            >50%</span
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <div class="progress skills-list__progress">
-                          <div
-                            class="progress-bar progress__progress-bar"
-                            role="progressbar"
-                            data-percent="30%"
-                            style="width: 30%"
-                          >
-                            <span class="sr-only">30% Complete</span>
-                          </div>
-                          <span class="progress-type progress__progress-type"
-                            >Node.js, Express, mongoDB, mongoose</span
-                          ><span class="progress-completed progress__progress-completed"
-                            >30%</span
-                          >
-                        </div>
-                      </li>
-                    </ul>
-              </div>
+                            " role="progressbar" data-percent="50%" style="width: 50%">
+                      <span class="sr-only">50% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">webpack, npm, yarn</span><span
+                      class="progress-completed progress__progress-completed">50%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar" role="progressbar" data-percent="35%"
+                      style="width: 35%">
+                      <span class="sr-only">35% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">Node.js, Express, mongoDB, mongoose</span><span
+                      class="progress-completed progress__progress-completed">35%</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="slills-items__item">
+              <h3 class="slills-items__item-title">
+                <i class="icon-hand-grab-o slills-items__item-icon"></i>&nbsp;Верстка
+              </h3>
+
+              <ul class="skills-list">
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar" role="progressbar" data-percent="89.7%"
+                      style="width: 89.7%">
+                      <span class="sr-only">89.7% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">HTML5 / CSS3</span><span
+                      class="progress-completed progress__progress-completed">89.7%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar" role="progressbar" data-percent="85.7%"
+                      style="width: 85.7%">
+                      <span class="sr-only">85.7% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">
+                      flexbox, grid </span><span class="progress-completed progress__progress-completed">85.7%</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar progress__progress-bar_red" role="progressbar"
+                      data-percent="75.7%" style="width: 75.7%">
+                      <span class="sr-only">75.7% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">SASS, SCSS..</span><span
+                      class="progress-completed progress__progress-completed">75.7%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress skills-list__progress">
+                    <div class="progress-bar progress__progress-bar progress__progress-bar_black" role="progressbar"
+                      data-percent="65%" style="width: 65%">
+                      <span class="sr-only">65% Complete</span>
+                    </div>
+                    <span class="progress-type progress__progress-type">Bootstrap 4-5, Material UI</span><span
+                      class="progress-completed progress__progress-completed">65%</span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="s-portfolio section" id="portfolio">
-          <div class="section-inner">
-            <div class="section-title">
-              <h2 class="title section__title">портфолио</h2>
+      <section class="s-portfolio section" id="portfolio">
+        <div class="section-inner">
+          
+          <div class="section-title">
+            <h2 class="title section__title">портфолио</h2>
+          </div>
+          <div class="projects-list">
+            <h2 class="projects-list__title">
+              <i class="icon-code"></i>&nbsp;Программирование
+            </h2>
+            <div class="projects-list__item">
+              <div class="projects-list__img-wrap">
+                <a class="link" href="https://h7i7y.csb.app/" target="_blank">
+                  <picture>
+                    <source srcset="img/portfolio/Calendar.webp 1x" type="image/webp" />
+                    <img class="projects-list__img" src="img/portfolio/Calendar.jpg" alt="PIZZA" />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="project-descr">
+                <h2 class="project-descr__title">Мурр-Мяуу Календарь</h2>
+
+                <p class="project-descr__text">
+                  Мурр-Мяуу Календарь - это сервис для планирования дел.
+                  Приложение состоит из пользовательской части и админки.
+                </p>
+                <p class="project-descr__text">
+                  Админка: <br />
+                  timmtha7er@gmail.com <br />
+                  q1234567w
+                </p>
+                <p class="project-descr__text">
+                  Клиентская часть написана: TS, React, Redux, react-router-dom, react-content-loader, moment.js. <br> По верстке - SCSS, БЭМ. <br />
+                </p>
+
+                <p class="project-descr__text">
+                  В качестве серверной части использовал firebase.
+                </p>
+
+                <a class="btn link project-descr__link" href="https://h7i7y.csb.app/"
+                target="_blank">Посмотреть результат</a>
+                <a class="btn link project-descr__link" href="https://github.com/TimmTha7er/scheduler"
+                  target="_blank">Рабочий проект</a>
+              </div>
             </div>
-            <div class="projects-list">
-              <h2 class="projects-list__title">
-                <i class="icon-picture"></i>&nbsp;Верстка
-              </h2>
-              <p class="project-descr__text">
-                  При верстке следующих работ я старался применять новые технологии.
-                  Поэтому в IE11 они будут иметь некоторые визуальные отличия. Если есть
-                  такая необходимость, я могу верстать с поддержкой IE9+, используя
-                  bootstrap 3, susy или другие библиотеки.
-              </p>
-              <p class="project-descr__text">
-                1 ) При верстке всех работ использовал Gulp, SCSS, сброс стилей,
-                БЭМ (только именование классов), иконочный шрифт Font Awesome
-                (fontello), Flexbox, слайдер tiny-slider, адаптивные изображения
-                (picture, srcset), humburger menu на узких экранах, box-shadow,
-                transition<br />
-                2 ) При билде для: <br />
-                a ) JS: uglify, concat, babel. <br />
-                b ) CSS: groupmedia, cleanCSS <br />
-                c ) картинок: imagemin, webp <br />
-              </p>
-              <div class="projects-list__item">
-                <div class="projects-list__img-wrap">
-                  <a
-                    class="link"
-                    href="https://timmtha7er.github.io/bhost/"
-                    target="_blank"
-                  >
-                    <picture>
-                      <source
-                        srcset="img/portfolio/BHosting.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="projects-list__img"
-                        src="img/portfolio/BHosting.jpg"
-                        alt="BHosting"
-                      />
-                    </picture>
-                  </a>
-                </div>
 
-                <div class="project-descr">
-                  <h2 class="project-descr__title">BHosting</h2>
-
-                  <p class="project-descr__text">
-                    В данной работе создавал спойлеры с помощью checkbox и
-                    вкладки с помощью radiobutton. Так же создавал кастомные
-                    checkbox
-                  </p>
-
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://timmtha7er.github.io/bhost/"
-                    target="_blank"
-                    >Посмотреть результат</a
-                  >
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://github.com/TimmTha7er/bhost-work"
-                    target="_blank"
-                    >Рабочий проект</a
-                  >
-                </div>
-              </div>
-              <div class="projects-list__item">
-                <div class="projects-list__img-wrap">
-                  <a
-                    class="link"
-                    href="https://timmtha7er.github.io/uifuse/"
-                    target="_blank"
-                  >
-                    <picture>
-                      <source
-                        srcset="img/portfolio/UIFUSE.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="projects-list__img"
-                        src="img/portfolio/UIFUSE.jpg"
-                        alt="UIFUSE"
-                      />
-                    </picture>
-                  </a>
-                </div>
-
-                <div class="project-descr">
-                  <h2 class="project-descr__title">UIFUSE</h2>
-
-                  <p class="project-descr__text">
-                    В данной работе для верстки секции portfolio c изображениями
-                    был применен Grid. Фильтр изображений делал с помощью JS.
-                  </p>
-
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://timmtha7er.github.io/uifuse/"
-                    target="_blank"
-                    >Посмотреть результат</a
-                  >
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://github.com/TimmTha7er/uifuse-work"
-                    target="_blank"
-                    >Рабочий проект</a
-                  >
-                </div>
-              </div>
-              <div class="projects-list__item">
-                <div class="projects-list__img-wrap">
-                  <a
-                    class="link"
-                    href="https://timmtha7er.github.io/Bicycle/"
-                    target="_blank"
-                  >
-                    <picture>
-                      <source
-                        srcset="img/portfolio/BICYCLE.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="projects-list__img"
-                        src="img/portfolio/BICYCLE.jpg"
-                        alt="BICYCLE"
-                      />
-                    </picture>
-                  </a>
-                </div>
-
-                <div class="project-descr">
-                  <h2 class="project-descr__title">BICYCLE</h2>
-
-                  <p class="project-descr__text">
-                    Данной работе очень интересна своей адаптивностью под размер
-                    экрана. Для этого использовал соблюдающий пропорции
-                    контейнер(padding-top) и свойства object-fit,
-                    object-position для изображений.
-                  </p>
-
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://timmtha7er.github.io/Bicycle/"
-                    target="_blank"
-                    >Посмотреть результат</a
-                  >
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://github.com/TimmTha7er/bicycle-work"
-                    target="_blank"
-                    >Рабочий проект</a
-                  >
-                </div>
+            <h2 class="projects-list__title">
+              <i class="icon-picture"></i>&nbsp;Верстка
+            </h2>
+            <p class="project-descr__text">
+              При верстке всех работ использовал GULP, SCSS, Reset CSS,
+              BEM, иконочный шрифт Font Awesome(fontello), адаптивные изображения
+              (picture, srcset)<br />
+              При билде использовал следующие плагины: <br />
+              1 ) JS: uglify, concat, babel. <br />
+              2 ) CSS: groupmedia, cleanCSS <br />
+              3 ) картинок: imagemin, webp <br />
+            </p>
+            <div class="projects-list__item">
+              <div class="projects-list__img-wrap">
+                <a class="link" href="https://timmtha7er.github.io/bhost/" target="_blank">
+                  <picture>
+                    <source srcset="img/portfolio/BHosting.webp 1x" type="image/webp" />
+                    <img class="projects-list__img" src="img/portfolio/BHosting.jpg" alt="BHosting" />
+                  </picture>
+                </a>
               </div>
 
-              <h2 class="projects-list__title">
-                <i class="icon-code"></i>&nbsp;Программирование
-              </h2>
-               <div class="projects-list__item">
-                <div class="projects-list__img-wrap">
-                  <a
-                    class="link"
-                    href="https://codesandbox.io/s/silly-einstein-h7i7y"
-                    target="_blank"
-                  >
-                    <picture>
-                      <source
-                        srcset="img/portfolio/Calendar.webp 1x"
-                        type="image/webp"
-                      />
-                      <img
-                        class="projects-list__img"
-                        src="img/portfolio/Calendar.jpg"
-                        alt="PIZZA"
-                      />
-                    </picture>
-                  </a>
-                </div>
+              <div class="project-descr">
+                <h2 class="project-descr__title">BHosting</h2>
 
-                <div class="project-descr">
-                            <h2 class="project-descr__title">Мурр-Мяуу Календарь</h2>
+                <!-- <p class="project-descr__text">
+                  В данной работе создавал спойлеры с помощью checkbox и
+                  вкладки с помощью radiobutton. Так же создавал кастомные
+                  checkbox
+                </p> -->
 
-          <p class="project-descr__text">
-            Мурр-Мяуу Календарь - это сервис для планирования дел. <br />
-            Приложение состоит из пользовательской части и админки.
-          </p>
-          <p class="project-descr__text">
-            Админка: <br />
-            timmtha7er@gmail.com <br />
-            q1234567w
-          </p>
-          <p class="project-descr__text">
-            Клиентская часть написана с помощью React, управление сотоянием -
-            Redux, лоудер при загрузке react-content-loader, маршрутизация -
-            react-router-dom. Так же использовал TS. Работа со временем -
-            moment.js. По верстке - SCSS, БЭМ. <br />
-          </p>
-
-          <p class="project-descr__text">
-            В качестве серверной части использовал firebase.
-          </p>
-
-                  <a
-                    class="btn link project-descr__link"
-                    href="https://codesandbox.io/s/silly-einstein-h7i7y"
-                    target="_blank"
-                    >Рабочий проект</a
-                  >
-                </div>
+                <a class="btn link project-descr__link" href="https://timmtha7er.github.io/bhost/"
+                  target="_blank">Посмотреть результат</a>
+                <a class="btn link project-descr__link" href="https://github.com/TimmTha7er/bhost-work"
+                  target="_blank">Рабочий проект</a>
               </div>
-<!--               <div class="projects-list__item">
+            </div>
+            <div class="projects-list__item">
+              <div class="projects-list__img-wrap">
+                <a class="link" href="https://timmtha7er.github.io/uifuse/" target="_blank">
+                  <picture>
+                    <source srcset="img/portfolio/UIFUSE.webp 1x" type="image/webp" />
+                    <img class="projects-list__img" src="img/portfolio/UIFUSE.jpg" alt="UIFUSE" />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="project-descr">
+                <h2 class="project-descr__title">UIFUSE</h2>
+
+                <!-- <p class="project-descr__text">
+                  В данной работе для верстки секции portfolio c изображениями
+                  был применен Grid. Фильтр изображений делал с помощью JS.
+                </p> -->
+
+                <a class="btn link project-descr__link" href="https://timmtha7er.github.io/uifuse/"
+                  target="_blank">Посмотреть результат</a>
+                <a class="btn link project-descr__link" href="https://github.com/TimmTha7er/uifuse-work"
+                  target="_blank">Рабочий проект</a>
+              </div>
+            </div>
+            <div class="projects-list__item">
+              <div class="projects-list__img-wrap">
+                <a class="link" href="https://timmtha7er.github.io/Bicycle/" target="_blank">
+                  <picture>
+                    <source srcset="img/portfolio/BICYCLE.webp 1x" type="image/webp" />
+                    <img class="projects-list__img" src="img/portfolio/BICYCLE.jpg" alt="BICYCLE" />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="project-descr">
+                <h2 class="project-descr__title">BICYCLE</h2>
+
+                <!-- <p class="project-descr__text">
+                  Данной работе очень интересна своей адаптивностью под размер
+                  экрана. Для этого использовал соблюдающий пропорции
+                  контейнер(padding-top) и свойства object-fit,
+                  object-position для изображений.
+                </p> -->
+
+                <a class="btn link project-descr__link" href="https://timmtha7er.github.io/Bicycle/"
+                  target="_blank">Посмотреть результат</a>
+                <a class="btn link project-descr__link" href="https://github.com/TimmTha7er/bicycle-work"
+                  target="_blank">Рабочий проект</a>
+              </div>
+            </div>
+
+            <!--               <div class="projects-list__item">
                 <div class="projects-list__img-wrap">
                   <a
                     class="link"
@@ -978,46 +674,45 @@
                   >
                 </div>
               </div> -->
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="s-contact section" id="contact">
-          <div class="section-inner">
-            <div class="section-title">
-              <h2 class="title section__title">контакты</h2>
-            </div>
-            <div class="s-contact__map">
-              <div class="s-contact__map-overlay"></div>
-              <iframe
-                class="s-contact__iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15798.70190426161!2d27.663668635249905!3d53.940784618021816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbceb765fd3523%3A0x7892841d2310deb3!2z0YPQuy4g0KjRg9Cz0LDQtdCy0LAgMjEvMSwg0JzQuNC90YHQuiAyMjAxNDE!5e0!3m2!1sru!2sby!4v1487769076548"
-                height="255"
-                style="border: 0"
-                allowfullscreen=""
-              ></iframe>
-            </div>
-            <div class="contact-info">
-              <h4 class="contact-info__title">
-                <i class="icon-map"></i>&ensp;Адрес
-              </h4>
-              <p class="contact-info__text">г.Минск ул.Шугаева д.21-1 кв.300</p>
-              <h4 class="contact-info__title">
-                <i class="icon-phone-squared"></i>&ensp;Телефон
-              </h4>
-              <p class="contact-info__text">+375 29 8626610</p>
-              <h4 class="contact-info__title">
-                <i class="icon-mail-alt"></i>&ensp;Mail
-              </h4>
-              <p class="contact-info__text">timmtha7er@gmail.com</p>
-            </div>
+      <section class="s-contact section" id="contact">
+        <div class="section-inner">
+          <div class="section-title">
+            <h2 class="title section__title">контакты</h2>
           </div>
-        </section>
-      </main>
-      <a href="#" class="to-top link"
-        ><i class="icon-angle-up to-top__icon"></i
-      ></a>
-    </div>
-    <script src="js/scripts.min.js"></script>
-  </body>
+          <div class="s-contact__map">
+            <div class="s-contact__map-overlay"></div>
+            <iframe class="s-contact__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.185423823754!2d27.666692851967735!3d53.94621423721146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbced27d79d5fb%3A0x3e1952f78ef29fa4!2z0YPQuy4g0JPQvtGA0L7QtNC10YbQutCw0Y8gNTgsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1656605021445!5m2!1sru!2sby"
+              height="255" style="border: 0" allowfullscreen=""></iframe>
+          </div>
+          <div class="contact-info">
+            <h4 class="contact-info__title">
+              <i class="icon-map"></i>&ensp;Адрес
+            </h4>
+            <p class="contact-info__text">г.Минск ул.Городецкая д.58 кв.374</p>
+            <h4 class="contact-info__title">
+              <i class="icon-phone-squared"></i>&ensp;Телефон
+            </h4>
+            <p class="contact-info__text">
+              <a href="tel:+375298626610">телефон +375 29 8626610</a>
+            </p>
+            <h4 class="contact-info__title">
+              <i class="icon-mail-alt"></i>&ensp;Mail
+            </h4>
+            <p class="contact-info__text">
+              <a href="mailto:timmtha7er@gmail.com">email: timmtha7er@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="to-top link"><i class="icon-angle-up to-top__icon"></i></a>
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
